@@ -77,3 +77,17 @@ __recovery/
 
 # Castalia statistics file (since XE7 Castalia is distributed with Delphi)
 *.stat
+
+# ---- NowYouSee.md ----
+
+# Third-party code and binaries that are kept out of the repository on
+# purpose (SynEdit, WebView2Loader.dll). Never committed.
+# See DEPENDENCIES.md. Filled by tools/fetch-nocommit.ps1.
+/no-commit/
+
+# Delphi output folders
+/src/delphi/Win32/
+/src/delphi/Win64/
+
+# The program keeps the previous version of a file it saves as <name>.bak
+*.bak
